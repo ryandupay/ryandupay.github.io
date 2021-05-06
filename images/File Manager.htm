@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "XHTML 1.0 Transitional" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0029)http://185.27.134.9/index.php -->
+<html xml:lang="en" dir="ltr"><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="shortcut icon" href="http://185.27.134.9/favicon.ico">
+<link rel="apple-touch-icon" href="http://185.27.134.9/favicon.png">
+<title>File Manager</title>
+
+<script type="text/javascript"><!--
+function TabText() {
+	if (event != null) {
+		if (event.srcElement) {
+			if (event.srcElement.value) {
+				if (event.keyCode == 9) {
+					if (document.selection != null) {
+						document.selection.createRange().text = '\t';
+						event.returnValue = false;
+					}
+					else {
+						event.srcElement.value += '\t';
+						return false;
+					}
+				}
+			}
+		}
+	}
+}
+//--></script>
+<script type="text/javascript" src="./File Manager_files/edit.js"></script>
+
+			<!-- /skins/skins.inc.php -->
+			<script type="text/javascript" src="./File Manager_files/custom.js"></script>
+			<script type="text/javascript" src="./File Manager_files/hoverIntent.js"></script>
+			<script type="text/javascript" src="./File Manager_files/superfish.js"></script>
+			<script type="text/javascript" src="./File Manager_files/supersubs.js"></script>
+			<script type="text/javascript" src="./File Manager_files/jquery.poshytip.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./File Manager_files/main.css.php">
+
+			<!-- /skins/skins.inc.php -->
+			<link rel="stylesheet" href="./File Manager_files/style.css.php" type="text/css" media="screen">
+			<link rel="stylesheet" href="./File Manager_files/style.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="./File Manager_files/tip-twitter.css" type="text/css">
+			<link rel="stylesheet" href="./File Manager_files/tip-yellowsimple.css" type="text/css">
+		<link rel="stylesheet" href="./File Manager_files/bootstrap.min.css"><link rel="stylesheet" href="./File Manager_files/bootstrapValidator.min.css"><script type="text/javascript" src="./File Manager_files/jquery-1.11.1.min.js"></script><script type="text/javascript" src="./File Manager_files/bootstrap.min.js"></script><script type="text/javascript" src="./File Manager_files/bootstrapValidator.min.js"></script><script type="text/javascript" src="./File Manager_files/jquery.tablesorter.min.js"></script><script type="text/javascript" src="./File Manager_files/jquery.tablesorter.pager.js"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+<body onload="" cz-shortcut-listen="true">
+
+<!-- Template /skins/shinra/edit.template.php begin -->
+<form id="EditForm" action="http://185.27.134.9/index.php" method="post">
+<input type="hidden" name="ftpserver" value="185.27.134.11">
+<input type="hidden" name="ftpserverport" value="21">
+<input type="hidden" name="username" value="epiz_23065971">
+<input type="hidden" name="language" value="en">
+<input type="hidden" name="skin" value="shinra">
+<input type="hidden" name="ftpmode" value="automatic">
+<input type="hidden" name="passivemode" value="yes">
+<input type="hidden" name="protocol" value="FTP">
+<input type="hidden" name="viewmode" value="list">
+<input type="hidden" name="sort" value="">
+<input type="hidden" name="sortorder" value="">
+<input type="hidden" name="state" value="edit">
+<input type="hidden" name="state2" value="">
+<input type="hidden" name="directory" value="/htdocs">
+<input type="hidden" name="screen" value="2">
+<input type="hidden" name="textareaType" value="plain">
+<table style="padding: 2px; width: 99%; height: 100%; border: 0px;">
+	<tbody><tr>
+		<td style="vertical-align: top; text-align: left; width: 25%;">
+<a href="javascript:document.forms[&#39;EditForm&#39;].state.value=&#39;browse&#39;; document.forms[&#39;EditForm&#39;].state2.value=&#39;main&#39;; document.forms[&#39;EditForm&#39;].submit();" title="Back (accesskey b)" accesskey="b"><img src="./File Manager_files/back.png" alt="Back (accesskey b)" onmouseover="this.style.margin=&#39;0px&#39;;this.style.width=&#39;34px&#39;;this.style.height=&#39;34px&#39;;" onmouseout="this.style.margin=&#39;1px&#39;;this.style.width=&#39;32px&#39;;this.style.height=&#39;32px&#39;;" style="border: 0px; margin: 1px; width: 32px; height: 32px; vertical-align: middle;"></a>
+ &nbsp; 
+<a href="javascript:document.forms[&#39;EditForm&#39;].screen.value=3;  document.forms[&#39;EditForm&#39;].submit();" title="Save (accesskey s)" accesskey="s"><img src="./File Manager_files/filesave.png" alt="Save (accesskey s)" onmouseover="this.style.margin=&#39;0px&#39;;this.style.width=&#39;34px&#39;;this.style.height=&#39;34px&#39;;" onmouseout="this.style.margin=&#39;1px&#39;;this.style.width=&#39;32px&#39;;this.style.height=&#39;32px&#39;;" style="border: 0px; margin: 1px; width: 32px; height: 32px; vertical-align: middle;"></a>
+ &nbsp; 
+<select name="textareaSelect" id="textareaSelect" onchange="document.forms[&#39;EditForm&#39;].screen.value=2;document.forms[&#39;EditForm&#39;].textareaType.value=document.forms[&#39;EditForm&#39;].textareaSelect.options[document.forms[&#39;EditForm&#39;].textareaSelect.selectedIndex].value;document.forms[&#39;EditForm&#39;].submit();">
+<option value="plain" selected="selected">Normal textarea</option>
+<option value="ace">Ace (code editor)</option>
+</select>
+		</td>
+		<td style="vertical-align: top; text-align: left; width: 50%;">
+				<input type="hidden" name="entry" value="email.php">
+				File: /htdocs/email.php<br>
+ &nbsp;
+		</td>
+		<td style="vertical-align: top; text-align: left; width: 25%;">
+			<span style="font-size: 90%;">Status: Saved on <b>2018-11-30 12:07:57</b> using mode FTP_ASCII</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; text-align: left;">
+			<div style="margin-left: 0px; text-align: left;">
+				<textarea name="text" class="edit" rows="33" style="width: 99%;" wrap="off" onkeydown="TabText()">&lt;?php
+$name = $_POST["name"];
+$email = $_POST["email"];
+$comment = $_POST["comment"];
+
+$to = "ryandupay@gmail.com";
+$subject = "You got mail! - From Personal Web";
+
+$message = "
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;You got mail! - From Personal Web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;You got an Email from your Personal Website&lt;/p&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: $email' . "\r\n";
+$headers .= 'Cc: ryan_dupay@live.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
+
+var_dump(mail($to,$subject,$message,$headers));
+
+phpinfo();
+
+// header("location: index.php?emailupdate=1");
+
+?&gt;</textarea>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+
+<!-- Template /skins/shinra/edit.template.php end -->
+
+
+
+
+</body></html>
